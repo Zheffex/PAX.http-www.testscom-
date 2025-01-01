@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grechen+Fuemen&family=Nosifer&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Addiction {
+    margin-top:70px;
+    margin-bottom: 150px;
+    font-size: 2rem; /* Set a larger font size */
+    color:rgb(0, 0, 0); /* Change text color */
+    text-decoration: line-through;
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-family: "Nosifer", serif;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 
+                 0 0 10px rgba(255, 0, 0, 0.6), 
+                 0 0 15px rgba(255, 0, 0, 0.4); /* Initial glow effect */
+    animation: glow 1.5s infinite alternate; /* Smooth glowing animation */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 
+                     0 0 10px rgba(255, 0, 0, 0.6), 
+                     0 0 15px rgba(255, 0, 0, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 1), 
+                     0 0 20px rgba(255, 0, 0, 0.8), 
+                     0 0 30px rgba(255, 0, 0, 0.6);
+    }
+}
+
+body{
+    background-color: #270302;
+    background-blend-mode:lighten;
+}
+
+.Contains {
+    display: flex;
+    padding: 20px;
+    margin: 40px 0px 50px 0px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the images */
+    position: relative;
+    max-width: 100%; /* Allow the container to expand fully */
+    margin: 0 auto;
+    overflow-x: hidden; /* Enable horizontal scrolling for overflow */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Auto-adjust columns */
+    gap: 5px; /* Adds spacing between items */
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0px 10px 0px;
+    display: inline-flex; /* Inline-flex ensures proper inline alignment */
+}
+
+.card-image {
+    width: 100%; /* Scale to fit the card's width */
+    height: 200px; /* Fixed height */
+    object-fit: contain; /* Ensures the whole image fits without being cropped */
+    border-radius: 4px; /* Keeps the corners rounded */
+}
+
+
+.card-item {
+    margin-right: 5px; /* Add space between items */
+    padding: 20px;
+    border: 1px solid #c20212;
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    width: 400px; /* Fixed width for consistent layout */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    vertical-align: top; /* Align items to the top */
+}
+
+.card-item:hover {
+    box-shadow: 0 4px 20px rgba(209, 14, 14, 0.1);
+    transform: translateY(-5px);
+}
+
+.Badge {
+    display: block;
+    background-color: #300000; /* Badge color */
+    color: rgba(189, 23, 131, 0.705);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #a43c44; /* Default color */
+}
+
+.card-title:hover {
+    color: #c10000; /* Change color on hover */
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.card-link:hover .fa-solid.fa-angle-right {
+    color: rgb(255, 0, 0); /* Change icon color on hover */
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+button:hover {
+    color: rgb(255, 255, 255); /* Change button icon color on hover */
+}

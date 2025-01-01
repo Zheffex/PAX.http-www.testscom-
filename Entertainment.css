@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h3.Subject{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 3.6rem; /* Set a larger font size */
+    color: rgb(255, 255, 255); /* Change text color */
+    text-align: center; /* Center align the heading */
+    font-family: "Bebas Neue", serif;
+}
+
+.Supress {
+    background-image: linear-gradient(#210021, rgba(0, 0, 0, 0.687)), url('31.2.png'); 
+    background-size: cover; /* Ensure the background covers the entire container */
+    background-position: center; /* Move the image down by 10px */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    padding: 50px 20px; /* Adjust padding as needed */
+    min-height: 120vh; /* Ensure the container takes up the full viewport height */
+}
+
+/* General Styling */
+.Supressed {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between images */
+    margin: 40px 0px 40px;
+}
+
+/* Resizing and Styling Images */
+ .section-img2 {
+
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images are cropped to fit */
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Images */
+.section-img2:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow effect on hover */
+}
+
+/* Hover Effect for Images */
+.section-img2:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 10px 25px rgba(128, 0, 255, 0.815); /* Deep shadow effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}

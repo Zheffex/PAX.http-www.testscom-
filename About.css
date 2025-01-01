@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+:root {
+    --white-color: #ffff;
+    --dark-color: #180200;
+    --primary-color: #a12934;
+    --secondary-color: #631920;
+    --light-pink-color: #87252f;
+    --medium-color: #531018;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --padding: 1rem; /* Default padding */
+}
+
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+    
+}
+
+header .navbar {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    background: var(--primary-color);
+    padding: 15px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    color:var(--white-color)
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 5px;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    background: var(--primary-color);
+    transition: 0.8s ease, color 0.3s ease; /* Applies transition to these properties */
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background:var(--secondary-color); /* Change the background on hover */
+    color: var(--white-color); /* Change the text color on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* Creates space at the top of the main content */
+    background-color: var(--dark-color); /* Dark background for main section */
+    color: var(--white-color); /* White text color for better contrast */
+    min-height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center content vertically */
+}
+
+
+.about-container {
+    overflow: hidden;
+    margin: 50px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    min-height: 80vh;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(37, 36, 49, 1) 50%, rgba(25, 25, 36, 1) 100%);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px 50px 20px 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 366px){
+    .about-container {
+        overflow: hidden;
+        margin: 50px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 20rem;
+        min-height: 80vh;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(37, 36, 49, 1) 50%, rgba(25, 25, 36, 1) 100%);
+        border-radius: var(--border-radius-m);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 20px 50px 20px 50px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.about-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, rgba(34, 33, 44, 1) 50%, rgba(17, 17, 30, 1) 100%);
+}
+
+.about-content h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 1rem;
+    color: var(--white-color);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.7); /* OSU-style text glow */
+}
+
+.about-content p {
+    margin: 20px 0px 20px 0px;
+    font-size: var(--font-size-n);
+    color: var(--white-color);
+    line-height: 1.6;
+    opacity: 0.9;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for contrast */
+}
+
+.about-content a {
+    color: #FF66CC; /* Bright pink highlight */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-content a:hover {
+    color: #FF3399; /* Brighter pink hover effect */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar .nav-menu {
+    display: none; /* Hide by default */
+    background-color:#531018; /* Background color */
+    position: fixed; /* Fixed positioning */
+    left: 0; /* Align menu to the left */
+    top: 0; /* Align menu to the top */
+    width: 230px; /* Fixed width for the menu */
+    height: 100%; /* Full height */
+    z-index: 300px; /* Ensure menu is above other content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    transform: translateX(-100%); /* Hide off-screen initially */
+    transition: 8s transform ease-in-out; /* Smooth slide-in effect */
+}
+
+    .navbar .nav-menu.active {
+    display: table-row;
+    text-wrap: #531018;
+    border-radius: 2px;
+    align-items: center;
+    transform: translateX(0); /* Slide-in the menu */
+    justify-items: center;
+    font-size: xx-large;
+    padding: 73px 65px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    
+}
+
+    .navbar .nav-menu.active .nav-link {
+    font-size: 22px; /* Adjust the size of links specifically */
+    padding: 7px; /* Add space around the links */
+    box-sizing: border-box;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+    .menu-toggle {
+    display: block; /* Show hamburger button for mobile */
+    font-size: var(--font-size-xl);
+    flex-direction: row; /* Ensure flex-direction is set to row */
+    color: var(--white-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above the menu */
+    align-items: center; /* Ensure child elements align horizontally */
+    justify-content: space-between; /* Ensure spacing between elements */ 
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+.nav-logo {
+    max-width: 80%; /* Restrict logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the logo */
+}
+
+.navbar .nav-menu {
+    display: flex; /* Show the menu by default on desktop */
+}
+
+ .menu-toggle {
+ display: none;
+ }
+}

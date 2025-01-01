@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+:root {
+    --white-color: #ffff;
+    --dark-color: #180200;
+    --primary-color: #a12934;
+    --secondary-color: #631920;
+    --light-pink-color: #87252f;
+    --medium-color: #531018;
+
+    /* Font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --padding: 1rem; /* Default padding */
+}
+
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+    
+}
+
+header .navbar {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    background: var(--primary-color);
+    padding: 15px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    color:var(--white-color)
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 5px;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    background: var(--primary-color);
+    transition: 0.8s ease, color 0.3s ease; /* Applies transition to these properties */
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background:var(--secondary-color); /* Change the background on hover */
+    color: var(--white-color); /* Change the text color on hover */
+}
+
+/* Styling for main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* Creates space at the top of the main content */
+    background: linear-gradient(to bottom, rgb(84,44,24), rgba(14,25,45,255));
+    color: var(--white-color); /* White text color for better contrast */
+    min-height: 100vh; /* Full viewport height */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Hero section styling */
+.hero-section {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+    text-align: center;
+    height: 100%; /* Full height to ensure hero image covers entire viewport */
+}
+
+/* Specific background images for each hero section */
+.hero-section:nth-of-type(1){
+    background-image: url('bg1.jpg'); /* Replace with your actual image URL */
+    background-size: cover;  /* Ensure the image covers the entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    height: 40%;  /* Full viewport height for the section */
+    width: 100%;  /* Full width for the section */
+}
+
+.hero-section:nth-of-type(3) {
+    background-image: url('bg2.jpg'); /* Replace with your actual image URL */
+    background-size: cover;  /* Ensure the image covers the entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    height: 40%;  /* Full viewport height for the section */
+    width: 100%;  /* Full width for the section */
+}
+
+.hero-section:nth-of-type(5) {
+    background-image: url('bg3.jpg'); /* Replace with your actual image URL */
+    background-size: cover;  /* Ensure the image covers the entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    height: 40%;  /* Full viewport height for the section */
+    width: 100%;  /* Full width for the section */
+}
+
+.hero-image img {
+    inline-size: 290px;
+    margin-top: 20px;
+    max-width: 100%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: var(--border-radius-m);
+    object-fit: cover; /* Ensure the image covers the container completely */
+}
+
+.hero-text {
+    margin-top: 1rem;
+}
+
+.hero-text h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: var(--font-size-m);
+    color: var(--white-color);
+}
+
+/* Content section styling */
+.content-section {
+    margin: 0px 10px 0px 10px;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: var(--padding);
+    text-align: center;
+    width: 100%; /* Ensure content section spans the full width */
+    min-height: 50vh; /* Full viewport height */
+}
+
+/* Content box styling */
+.content-box {
+    padding: var(--padding);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin-top: 1rem; /* Small margin between content boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    color: var(--white-color); /* Text color for better contrast */
+}
+
+.content-box:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 8px 20px rgba(22, 31, 74, 0.575); /* Enhance shadow on hover */
+    background-color: rgba(61, 23, 5, 0.664); /* Darker background on hover */
+    color: var(--white-color); /* Maintain white text color */
+}
+
+/* Adjust the content within the box */
+.content-box h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content-box p {
+    font-size: var(--font-size-n);
+    color: var(--white-color);
+    text-align: center;
+}
+/* Adding space between content sections */
+.content-box + .content-box {
+    margin-top: 1rem; /* Small margin between the content boxes */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media screen and (max-width: 900px) {
+
+
+    .navbar .nav-menu {
+    display: none; /* Hide by default */
+    background-color:#531018; /* Background color */
+    position: fixed; /* Fixed positioning */
+    left: 0; /* Align menu to the left */
+    top: 0; /* Align menu to the top */
+    width: 230px; /* Fixed width for the menu */
+    height: 100%; /* Full height */
+    z-index: 300px; /* Ensure menu is above other content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    transform: translateX(-100%); /* Hide off-screen initially */
+    transition: 8s transform ease-in-out; /* Smooth slide-in effect */
+}
+
+    .navbar .nav-menu.active {
+    display: table-row;
+    text-wrap: #531018;
+    border-radius: 2px;
+    align-items: center;
+    transform: translateX(0); /* Slide-in the menu */
+    justify-items: center;
+    font-size: xx-large;
+    padding: 73px 65px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    
+}
+
+    .navbar .nav-menu.active .nav-link {
+    font-size: 22px; /* Adjust the size of links specifically */
+    padding: 7px; /* Add space around the links */
+    box-sizing: border-box;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+    .menu-toggle {
+    display: block; /* Show hamburger button for mobile */
+    font-size: var(--font-size-xl);
+    flex-direction: row; /* Ensure flex-direction is set to row */
+    color: var(--white-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above the menu */
+    align-items: center; /* Ensure child elements align horizontally */
+    justify-content: space-between; /* Ensure spacing between elements */ 
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+.nav-logo {
+    max-width: 80%; /* Restrict logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the logo */
+}
+
+.navbar .nav-menu {
+    display: flex; /* Show the menu by default on desktop */
+}
+
+ .menu-toggle {
+ display: none;
+ }
+}

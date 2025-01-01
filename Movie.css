@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h3.titles {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3.6rem; /* Set a larger font size */
+    color: rgb(0, 0, 0); /* Change text color */
+    text-align: center; /* Center align the heading */
+    font-family: "Bebas Neue", serif;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 
+                 0 0 10px rgba(255, 0, 0, 0.6), 
+                 0 0 15px rgba(255, 0, 0, 0.4); /* Initial glow effect */
+    animation: glow 1.5s infinite alternate; /* Smooth glowing animation */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 
+                     0 0 10px rgba(255, 0, 0, 0.6), 
+                     0 0 15px rgba(255, 0, 0, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 1), 
+                     0 0 20px rgba(255, 0, 0, 0.8), 
+                     0 0 30px rgba(255, 0, 0, 0.6);
+    }
+}
+
+.Containers {
+    background-image: linear-gradient(#000000cd, rgba(0, 0, 0, 0.687)), url('31.1.png'); 
+    background-size: cover; /* Ensure the background covers the entire container */
+    background-position: center; /* Move the image down by 10px */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    padding: 50px 20px; /* Adjust padding as needed */
+    min-height: 120vh; /* Ensure the container takes up the full viewport height */
+}
+
+
+/* General Styling */
+.Banner {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the images */
+    gap: 20px; /* Space between images */
+    margin: 40px 0px 40px;
+}
+
+/* Resizing and Styling Images */
+.section-img1 {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images are cropped to fit */
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Images */
+.section-img1:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhance shadow effect on hover */
+}
+
+/* Hover Effect for Images */
+.section-img1:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 10px 25px rgba(133, 12, 12, 0.815); /* Deep shadow effect on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+#footer-container {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color:#580a11; /* Fixed background color */
+    padding: 10px 0; /* Vertical padding for spacing */
+    box-shadow: 0 4px 10px rgba(231, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Ensure the footer container takes full width */
+    height: 70px;
+    overflow: hidden; /* Hide overflow for the scrolling text */
+    position: relative; /* Set relative position to contain the scrolling text */
+    opacity: calc(75%);
+}
+
+#scrolling-footer {
+    padding-top: 10px;
+    width: max-content;
+    font-style: italic;
+    white-space: nowrap; /* Ensures the content doesn't wrap */
+    display: inline-block; /* Makes it inline block for animation */
+    font-size: 1.7rem; /* Set a suitable font size */
+    color: rgb(234, 117, 0); /* Text color for better contrast */
+    animation: scroll-left 40s linear infinite; /* Change duration for speed adjustment */
+    position: absolute; /* Position absolutely to allow movement inside the container */
+    top: 0; /* Align with the top of the container */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%); /* Start completely off-screen to the right */
+    }
+    to {
+        transform: translateX(-250%); /* End completely off-screen to the left */
+    }
+}
+

@@ -1,0 +1,332 @@
+/* Fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Fonts:  font-family: "Grechen Fuemen", serif;  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --white-color:#ffff;
+    --dark-color:#180200;
+    --primary-color:#a12934;
+    --secondary-color:#631920;
+    --light-pink-color:#87252f;
+    --medium-color:#531018;
+
+    /* Font size */
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-1: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* Font weight */
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Border radius */
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%
+
+}
+
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%rel;
+}
+
+.section-content{
+    margin: 0 auto;
+    justify-content: auto;
+
+}
+
+/* Navbar styling */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+    
+}
+
+header .navbar {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display: flex;
+    background: var(--primary-color);
+    padding: 15px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-xl);
+    color:var(--white-color)
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 5px;
+}
+
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    background: var(--primary-color);
+    transition: 0.8s ease, color 0.3s ease; /* Applies transition to these properties */
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background:var(--secondary-color); /* Change the background on hover */
+    color: var(--white-color); /* Change the text color on hover */
+}
+
+main {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* Creates space at the top of the main content */
+}
+
+.SectionA {
+    padding: 50px 225px 50px;
+}
+
+.SectionC {
+    display: flex table-row;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    margin: 0 auto; /* Center the section */
+}
+
+
+/* Upper part of the main */
+.title {
+    color: #550e18;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #c36c74;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.SectionD{
+    margin:0px 0px 20px 0px;
+    flex: 1; /* Allow this div to take available space */
+    padding: 20px;
+    background-color: #a12934; /* Dark red background */
+    color: #ffff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.scenery {
+    color: #000000; /* Initial text color */
+    padding: 10px 15px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+    border: 1px solid #2e0f0f; /* Border color */
+    background-color: transparent 20%; /* Background color */
+    animation: 0.5s ease;
+}
+
+.scenery:hover {
+    opacity: 80%;
+    background-color: #54040b; /* Background color on hover */
+    color: rgb(255, 255, 255); /* Change text color on hover */
+}
+
+.Quotes {
+    color: #ffffff; /* Initial text color */
+    padding: 10px 15px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for background and text color */
+    border: 1px solid #000000; /* Border color */
+    background-color: #000000; /* Background color */
+    animation: 0.5s ease;
+}
+
+.Quotes:hover {
+    background-color: #550e18; /* Background color on hover */
+    color: #f76565; /* Change text color on hover */
+}
+
+.section-imgs {
+    width: 100%; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.img-wrap {
+    inline-size: 100%;
+    margin: 0px 20px 0px 20px auto;
+    flex: 1; /* Allow this div to take available space */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.img-wrap img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.SectionB{
+    position: relative;
+    left: auto;
+    width: 75rem, auto;
+    margin-top: 20px;
+    flex: 1; /* Allow this div to take available space */
+    padding: 20px auto;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
+
+.SectionB .subtitle{
+    margin: 20px 30px 20px 30px;
+    color: #c36c74;
+
+}
+
+.SectionB p{
+    color: white;
+    margin: 20px 30px 20px 30px;
+}
+
+.SectionB .title {
+    max-width: calc(100%);
+    margin: auto;
+    font-size: 2.0rem;
+    text-align: center; /* Center all the content */
+    padding: 15px 0px 15px 0px; /* Add spacing around the section */
+    background-color: #631920; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    color: #ffffff;
+    width: 100%; /* Restrict the width for better readability */
+
+}
+
+.SectionB:hover {
+    box-shadow: 0 0 15px #b30f03; /* Glowing effect on the entire section */
+}
+
+/* Responsive design */
+@media screen and (max-width: 900px) {
+
+    .navbar .nav-menu {
+    display: none; /* Hide by default */
+    background-color:#531018; /* Background color */
+    position: fixed; /* Fixed positioning */
+    left: 0; /* Align menu to the left */
+    top: 0; /* Align menu to the top */
+    width: 230px; /* Fixed width for the menu */
+    height: 100%; /* Full height */
+    z-index: 300px; /* Ensure menu is above other content */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    transform: translateX(-100%); /* Hide off-screen initially */
+    transition: 8s transform ease-in-out; /* Smooth slide-in effect */
+}
+
+    .navbar .nav-menu.active {
+    display: table-row;
+    text-wrap: #531018;
+    border-radius: 2px;
+    align-items: center;
+    transform: translateX(0); /* Slide-in the menu */
+    justify-items: center;
+    font-size: xx-large;
+    padding: 73px 65px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    
+}
+
+    .navbar .nav-menu.active .nav-link {
+    font-size: 22px; /* Adjust the size of links specifically */
+    padding: 7px; /* Add space around the links */
+    box-sizing: border-box;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+    .menu-toggle {
+    display: block; /* Show hamburger button for mobile */
+    font-size: var(--font-size-xl);
+    flex-direction: row; /* Ensure flex-direction is set to row */
+    color: var(--white-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above the menu */
+    align-items: center; /* Ensure child elements align horizontally */
+    justify-content: space-between; /* Ensure spacing between elements */ 
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+.nav-logo {
+    max-width: 80%; /* Restrict logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the logo */
+}
+
+.navbar .nav-menu {
+    display: flex; /* Show the menu by default on desktop */
+}
+
+ .menu-toggle {
+ display: none;
+ }
+}
+
